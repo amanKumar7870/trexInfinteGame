@@ -152,14 +152,15 @@ function draw() {
   //stop trex from falling down
   trex.collide(invisibleGround);
   
-  if(score>100000){
+  if(score>1000000){
+    gameState=END;
      trex.changeAnimation("abs", score_10000);
     trex.scale=1.2;
-    trex.x=width/2;
+    trex.x=width/2-200;
     trex.y=height/2;
     trex.debug=false;
     trex.setCollider("rectangle",100,0,150,trex.height);
-    gameState=END;
+    
   }
   
   drawSprites();
