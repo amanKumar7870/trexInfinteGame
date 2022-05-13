@@ -156,7 +156,7 @@ function draw() {
     gameState=END;
      trex.changeAnimation("abs", score_10000);
     trex.scale=1.2;
-    trex.x=width/2-200;
+    trex.x=width/2;
     trex.y=height/2;
     trex.debug=false;
     trex.setCollider("rectangle",100,0,150,trex.height);
